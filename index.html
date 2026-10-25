@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="tr" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolyo - Mesut Şahin</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#14b8a6', // Teal-500
+                        secondary: '#0f766e', // Teal-700
+                        dark: '#111827', // Gray-900
+                        darker: '#030712', // Gray-950
+                        card: '#1f2937', // Gray-800
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-dark text-gray-300 font-sans antialiased selection:bg-primary selection:text-white">
+
+    <nav class="fixed w-full z-50 bg-dark/90 backdrop-blur-sm border-b border-gray-800">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex-shrink-0">
+                    <a href="#" class="text-2xl font-bold text-white hover:text-primary transition-colors">MŞ<span
+                            class="text-primary">.</span></a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#about"
+                            class="hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors">Hakkımda</a>
+                        <a href="#skills"
+                            class="hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors">Yetenekler</a>
+                        <a href="#projects"
+                            class="hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors">Projeler</a>
+                        <a href="#experience"
+                            class="hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors">Deneyim</a>
+                        <a href="#contact"
+                            class="hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors">İletişim</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section id="hero" class="min-h-screen flex items-center justify-center pt-16">
+        <div class="text-center px-4 animate-fade-in-up">
+            <div class="mb-8 relative inline-block">
+                <div
+                    class="w-32 h-32 md:w-40 md:h-40 bg-card rounded-full flex items-center justify-center mx-auto border-4 border-primary shadow-lg shadow-primary/20 overflow-hidden">
+                    <img src="images/ben.jpg" alt="Mesut Şahin" class="w-full h-full object-cover">
+                </div>
+            </div>
+
+            <h1 class="text-4xl md:text-6xl font-bold text-white mb-4 tracking-tight">
+                <span class="text-primary">Mesut Şahin</span>
+            </h1>
+
+            <h2 class="text-xl md:text-2xl text-gray-400 mb-6 font-light">
+                Computer Engineer
+            </h2>
+
+            <p class="max-w-2xl mx-auto text-lg text-gray-400 mb-10 leading-relaxed">
+                Gömülü sistemlerden yapay zeka modellerine, mobil oyunlardan otonom sistemlere kadar geniş bir yelpazede
+                teknoloji üretiyorum.
+            </p>
+
+            <div class="flex justify-center space-x-6">
+                <a href="https://github.com/MesuttSahin" target="_blank"
+                    class="text-gray-400 hover:text-white hover:scale-110 transition-transform duration-300"><i
+                        class="fab fa-github fa-2x"></i></a>
+                <a href="https://www.linkedin.com/in/mesut-%C5%9Fahin-6215a6352" target="_blank"
+                    class="text-gray-400 hover:text-[#0A66C2] hover:scale-110 transition-transform duration-300"><i
+                        class="fab fa-linkedin fa-2x"></i></a>
+                <a href="mailto:mes.sahin9020@gmail.com"
+                    class="text-gray-400 hover:text-red-500 hover:scale-110 transition-transform duration-300"><i
+                        class="fas fa-envelope fa-2x"></i></a>
+            </div>
+
+            <div class="mt-12">
+                <a href="#projects"
+                    class="inline-block px-8 py-3 bg-primary text-darker font-bold rounded-full hover:bg-secondary transition-colors duration-300 shadow-lg shadow-primary/25">
+                    Projelerimi İncele
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-20 bg-darker">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6">
+            <h2 class="text-3xl font-bold text-white mb-8 flex items-center">
+                <span class="text-primary mr-2">01.</span> Hakkımda
+            </h2>
+            <div
+                class="bg-card p-8 rounded-2xl shadow-xl border border-gray-800 relative overflow-hidden group hover:border-primary/30 transition-colors duration-300">
+                <div
+                    class="absolute top-0 right-0 -mt-10 -mr-10 w-40 h-40 bg-primary/10 rounded-full blur-3xl group-hover:bg-primary/20 transition-all duration-700">
+                </div>
+
+                <p class="text-lg leading-relaxed text-gray-300 mb-6">
+                    Bilgisayar Mühendisliği öğrencisi olarak, edindiğim teorik altyapıyı uygulamaya aktararak
+                    mühendislik problemlerine çözüm üretmeye odaklanıyorum. Yazılım geliştirme süreçlerini yalnızca
+                    kodlama değil; analiz, tasarım ve doğrulama aşamalarını içeren bütüncül bir mühendislik yaklaşımıyla
+                    ele alıyorum.
+                </p>
+                <p class="text-lg leading-relaxed text-gray-300">
+                    Başlıca ilgi alanlarım arasında donanım ve yazılımın etkileşim içinde olduğu <strong>gömülü
+                        sistemler</strong>, kullanıcı odaklı <strong>mobil uygulama geliştirme</strong> ve <strong>yapay
+                        zeka tabanlı çözümler</strong> yer almaktadır. Bu kapsamda, TÜBİTAK ve TEKNOFEST gibi prestijli
+                    platformlarda sağlık ve erişilebilirlik alanlarına yönelik projeler üzerinde çalışmalar
+                    yürütmekteyim.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="skills" class="py-20">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6">
+            <h2 class="text-3xl font-bold text-white mb-12 flex items-center">
+                <span class="text-primary mr-2">02.</span> Teknik Yetenekler
+            </h2>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div
+                    class="bg-card p-4 rounded-xl border border-gray-800 flex items-center space-x-3 hover:border-primary/50 transition-colors">
+                    <i class="fas fa-mobile-alt text-blue-400 text-2xl"></i>
+                    <span class="font-medium">Flutter / Dart</span>
+                </div>
+                <div
+                    class="bg-card p-4 rounded-xl border border-gray-800 flex items-center space-x-3 hover:border-primary/50 transition-colors">
+                    <i class="fab fa-python text-yellow-400 text-2xl"></i>
+                    <span class="font-medium">Python</span>
+                </div>
+                <div
+                    class="bg-card p-4 rounded-xl border border-gray-800 flex items-center space-x-3 hover:border-primary/50 transition-colors">
+                    <i class="fas fa-brain text-primary text-2xl"></i>
+                    <span class="font-medium">Yapay Zeka / ML</span>
+                </div>
+                <div
+                    class="bg-card p-4 rounded-xl border border-gray-800 flex items-center space-x-3 hover:border-primary/50 transition-colors">
+                    <i class="fas fa-microchip text-green-500 text-2xl"></i>
+                    <span class="font-medium">Gömülü Sistemler</span>
+                </div>
+                <div
+                    class="bg-card p-4 rounded-xl border border-gray-800 flex items-center space-x-3 hover:border-primary/50 transition-colors">
+                    <i class="fas fa-fire text-orange-500 text-2xl"></i>
+                    <span class="font-medium">Firebase</span>
+                </div>
+                <div
+                    class="bg-card p-4 rounded-xl border border-gray-800 flex items-center space-x-3 hover:border-primary/50 transition-colors">
+                    <i class="fab fa-android text-green-400 text-2xl"></i>
+                    <span class="font-medium">Android</span>
+                </div>
+                <div
+                    class="bg-card p-4 rounded-xl border border-gray-800 flex items-center space-x-3 hover:border-primary/50 transition-colors">
+                    <i class="fas fa-camera text-purple-400 text-2xl"></i>
+                    <span class="font-medium">Görüntü İşleme</span>
+                </div>
+                <div
+                    class="bg-card p-4 rounded-xl border border-gray-800 flex items-center space-x-3 hover:border-primary/50 transition-colors">
+                    <i class="fab fa-git-alt text-red-500 text-2xl"></i>
+                    <span class="font-medium">Git & GitHub</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-20 bg-darker">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6">
+            <h2 class="text-3xl font-bold text-white mb-12 flex items-center">
+                <span class="text-primary mr-2">03.</span> Öne Çıkan Projeler
+            </h2>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <div
+                    class="bg-card rounded-xl overflow-hidden border border-gray-800 hover:border-primary/50 transition-all duration-300 group hover:-translate-y-2">
+                    <div class="h-48 bg-gray-700 relative overflow-hidden group">
+                        <div
+                            class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                            <i class="fas fa-eye text-white text-4xl"></i>
+                        </div>
+                        <img src="images/tubitak-logo-png_seeklogo-253775.png" alt="TÜBİTAK Projesi" class="w-full h-full object-contain absolute inset-0">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-xl font-bold text-white group-hover:text-primary transition-colors">Görme
+                                Engelli Navigasyon Asistanı</h3>
+                        </div>
+                        <p class="text-gray-400 text-sm mb-4 line-clamp-3">
+                            TÜBİTAK 2209-B kapsamında geliştirilen, Görme Engelliler için Google Maps Tabanlı Akıllı Yol Tarifi ve Dinamik Engel Önleme Sistemi
+                        </p>
+                        <div class="flex flex-wrap gap-2 text-xs font-mono text-primary">
+                            <span>TÜBİTAK</span>
+                            <span>Yapay Zeka</span>
+                            <span>Mobile</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="bg-card rounded-xl overflow-hidden border border-gray-800 hover:border-primary/50 transition-all duration-300 group hover:-translate-y-2">
+                    <div class="h-48 bg-gray-700 relative overflow-hidden group">
+                        <div
+                            class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                            <i class="fas fa-dna text-white text-4xl"></i>
+                        </div>
+                        <img src="images/t3-logo-TR-01_wnoJj_1_5TSjS.png" alt="Teknofest Sağlıkta Yapay Zeka Projesi" class="w-full h-full object-contain absolute inset-0">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-xl font-bold text-white group-hover:text-primary transition-colors">Genetik
+                                Varyant Analizi</h3>
+                        </div>
+                        <p class="text-gray-400 text-sm mb-4 line-clamp-3">
+                            TEKNOFEST Sağlıkta Yapay Zeka yarışması için genetik varyantların hastalık yapıcı
+                            (Patojenik) veya iyi huylu olup olmadığını tahmin eden ML modelleri.
+                        </p>
+                        <div class="flex flex-wrap gap-2 text-xs font-mono text-primary">
+                            <span>Python</span>
+                            <span>Machine Learning</span>
+                            <span>Bioinformatics</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="bg-card rounded-xl overflow-hidden border border-gray-800 hover:border-primary/50 transition-all duration-300 group hover:-translate-y-2">
+                    <div class="h-48 bg-gray-700 relative overflow-hidden group">
+                        <div
+                            class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                            <i class="fas fa-robot text-white text-4xl"></i>
+                        </div>
+                        <img src="images/pan.jpg" alt="Otonom Lazer İmha Sistemi Projesi" class="w-full h-full object-contain absolute inset-0">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-xl font-bold text-white group-hover:text-primary transition-colors">Otonom
+                                Lazer İmha Sistemi</h3>
+                        </div>
+                        <p class="text-gray-400 text-sm mb-4 line-clamp-3">
+                            Görüntü işleme kullanarak nesneleri tespit eden ve lazer ile otonom olarak etkisiz hale
+                            getiren gömülü sistem projesi.
+                        </p>
+                        <div class="flex flex-wrap gap-2 text-xs font-mono text-primary">
+                            <span>OpenCV</span>
+                            <span>Embedded</span>
+                            <span>Robotik</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="bg-card rounded-xl overflow-hidden border border-gray-800 hover:border-primary/50 transition-all duration-300 group hover:-translate-y-2">
+                    <div class="h-48 bg-gray-700 relative overflow-hidden group">
+                        <div
+                            class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                            <i class="fas fa-comments text-white text-4xl"></i>
+                        </div>
+                        <img src="images/netchat.jpeg" alt="NetChat Projesi" class="w-full h-full object-contain absolute inset-0">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-xl font-bold text-white group-hover:text-primary transition-colors">NetChat
+                            </h3>
+                            <div class="flex space-x-3">
+                                <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <p class="text-gray-400 text-sm mb-4 line-clamp-3">
+                            Flutter ve Firebase altyapısı kullanılarak geliştirilmiş, gerçek zamanlı mesajlaşma sağlayan
+                            canlı sohbet uygulaması.
+                        </p>
+                        <div class="flex flex-wrap gap-2 text-xs font-mono text-primary">
+                            <span>Flutter</span>
+                            <span>Firebase</span>
+                            <span>Android</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="bg-card rounded-xl overflow-hidden border border-gray-800 hover:border-primary/50 transition-all duration-300 group hover:-translate-y-2">
+                    <div class="h-48 bg-gray-800 relative overflow-hidden group">
+                        <!-- Üzerine gelince çıkan oyun kolu ikonu ve yeşil katman (z-10 eklendi ki resmin üstünde kalsın) -->
+                        <div class="absolute inset-0 bg-primary/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center z-10">
+                            <i class="fas fa-gamepad text-white text-4xl"></i>
+                        </div>
+                        <img src="images/meta.png" alt="Meta Ticaret Logo" class="w-full h-full object-contain p-4 absolute inset-0">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-4">
+                            <!-- Proje başlığını da logoya uygun olarak güncelledik -->
+                            <h3 class="text-xl font-bold text-white group-hover:text-primary transition-colors">Meta Ticaret</h3>
+                        </div>
+                        <p class="text-gray-400 text-sm mb-4 line-clamp-3">
+                            Şu anda geliştirilmekte olan, geniş kapsamlı ve internet bağlantısı gerektirmeyen offline ticaret simülasyonu.
+                        </p>
+                        <div class="flex flex-wrap gap-2 text-xs font-mono text-primary">
+                            <span>Flutter</span>
+                            <span>Game Dev</span>
+                            <span>State Mgmt</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="bg-card rounded-xl overflow-hidden border border-gray-800 hover:border-primary/50 transition-all duration-300 group hover:-translate-y-2">
+                    <div class="h-48 bg-gray-700 relative overflow-hidden group">
+                        <div
+                            class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                            <i class="fas fa-laptop-code text-white text-4xl"></i>
+                        </div>
+                        <img src="images/python.png" alt="Meta Ticaret Logo" class="w-full h-full object-contain p-4 absolute inset-0">
+
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-xl font-bold text-white group-hover:text-primary transition-colors">Python
+                                Araçları</h3>
+                            <div class="flex space-x-3">
+                                <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <p class="text-gray-400 text-sm mb-4 line-clamp-3">
+                            Video otomatik çeviri uygulaması, akıllı bütçe takip sistemi ve sesli asistan gibi hayatı
+                            kolaylaştıran çeşitli Python otomasyonları.
+                        </p>
+                        <div class="flex flex-wrap gap-2 text-xs font-mono text-primary">
+                            <span>Python</span>
+                            <span>Automation</span>
+                            <span>Desktop</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="py-20">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6">
+            <h2 class="text-3xl font-bold text-white mb-12 flex items-center">
+                <span class="text-primary mr-2">04.</span> Deneyim & Yarışmalar
+            </h2>
+
+            <div class="relative border-l border-gray-800 ml-4 space-y-12">
+
+                <div class="relative pl-8">
+                    <span
+                        class="absolute top-0 left-0 -ml-[5px] w-2.5 h-2.5 rounded-full bg-gray-600 ring-4 ring-dark"></span>
+                    <h3 class="text-xl font-bold text-white">Bilgi İşlem Daire Başkanlığı</h3>
+                    <span class="text-primary">Donanım Stajyeri</span>
+                    <span class="block text-sm text-gray-500 mt-1 mb-4">Temmuz 2025 - Ağustos 2025</span>
+                    <p class="text-gray-400 text-sm"></p>
+                </div>
+
+                <div class="relative pl-8">
+                    <span
+                        class="absolute top-0 left-0 -ml-[5px] w-2.5 h-2.5 rounded-full bg-primary ring-4 ring-dark"></span>
+                    <h3 class="text-xl font-bold text-white">Takım Kaptanı - Sağlıkta Yapay Zeka</h3>
+                    <span class="text-primary">TEKNOFEST</span>
+                    <span class="block text-sm text-gray-500 mt-1 mb-4">2026 - Devam Ediyor</span>
+                    <ul class="list-disc list-inside text-gray-400 space-y-2 text-sm md:text-base">
+                        <li>Genetik veri setleri üzerinde makine öğrenmesi modelleri geliştiriliyor.</li>
+                        <li>Patojenik ve Benign varyant sınıflandırması üzerine çalışılıyor.</li>
+                    </ul>
+                </div>
+
+                <div class="relative pl-8">
+                    <span
+                        class="absolute top-0 left-0 -ml-[5px] w-2.5 h-2.5 rounded-full bg-gray-600 ring-4 ring-dark"></span>
+                    <h3 class="text-xl font-bold text-white">Proje Yürütücüsü</h3>
+                    <span class="text-primary">TÜBİTAK Projesi</span>
+                    <span class="block text-sm text-gray-500 mt-1 mb-4">Devam Ediyor</span>
+                    <p class="text-gray-400 text-sm">Görme engelli bireyler için yapay zeka destekli navigasyon sistemi
+                        geliştirme projesi.</p>
+                </div>
+
+                <div class="relative pl-8">
+                    <span
+                        class="absolute top-0 left-0 -ml-[5px] w-2.5 h-2.5 rounded-full bg-gray-600 ring-4 ring-dark"></span>
+                    <h3 class="text-xl font-bold text-white">Bilgisayar Mühendisliği (%30 İngilizce)</h3>
+                    <span class="text-primary">Erciyes Üniversitesi</span>
+                    <span class="block text-sm text-gray-500 mt-1 mb-4">2021 - 2026</span>
+                    <p class="text-gray-400 text-sm"></p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-20 bg-darker text-center">
+        <div class="max-w-2xl mx-auto px-4">
+            <p class="text-primary font-mono mb-4">05. İletişim</p>
+            <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">Bana Ulaşın</h2>
+            <p class="text-lg text-gray-400 mb-10">
+                Projelerim hakkında konuşmak, işbirliği yapmak veya sadece merhaba demek isterseniz mail atabilirsiniz.
+            </p>
+            <a href="mailto:email@example.com"
+                class="inline-block px-10 py-4 bg-transparent border border-primary text-primary font-bold rounded hover:bg-primary/10 transition-colors duration-300">
+                Mail Gönder
+            </a>
+        </div>
+    </section>
+
+    <footer class="py-6 text-center text-sm text-gray-500 bg-dark">
+        <p>Telif Hakkı &copy; 2026 Mesut Şahin.</p>
+    </footer>
+
+</body>
+
+</html>
